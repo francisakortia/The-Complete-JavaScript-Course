@@ -64,7 +64,7 @@ job = 'teacher';
 
 lastName = 'Akortia';
 console.log(lastName);
-*/
+
 /////////////////////////////////////
 // Basic Operators
 
@@ -97,3 +97,42 @@ console.log(ageSarah >= 18);
 const isFullAge = ageSarah >= 18;
 
 console.log(now - 1991 > now - 2018);
+*/
+
+const now = 2037;
+const ageJonas = now - 1991;
+const ageSarah = now - 2018;
+
+console.log(now - 1991 > now - 2018);
+
+console.log(25 - 10 - 5);
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y);
+
+const averageAge = (ageJonas + ageSarah) / 2;
+console.log(ageJonas, ageSarah, averageAge);
+
+
+// Question 1
+const massMark = 78;
+const massJohn = 92;
+const heightMark = 1.69;
+const heightJohn = 1.95;
+
+//Question 2
+const markBMI = massMark / heightMark ** 2;
+const johnBMI = massJohn / heightJohn ** 2;
+
+const markBMI2 = massMark / (heightMark * heightMark);
+const johnBMI2 = massJohn /( heightJohn * heightJohn);
+
+console.log("Mark's BMI is " + " " + markBMI);
+console.log("Mark's BMI is " + " " + markBMI2);
+console.log("John's BMI is " + " " + johnBMI);
+console.log("John's BMI is " + " " + johnBMI2);
+
+//Question 3
+const markHigherBMI = markBMI > johnBMI;
+console.log("Mark has a higher BMI than John - ", markHigherBMI);
