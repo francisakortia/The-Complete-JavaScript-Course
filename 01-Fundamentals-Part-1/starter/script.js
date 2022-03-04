@@ -114,6 +114,7 @@ console.log(x, y);
 const averageAge = (ageJonas + ageSarah) / 2;
 console.log(ageJonas, ageSarah, averageAge);
 
+//Coding challenge #1
 
 // Question 1
 const massMark = 78;
@@ -162,6 +163,7 @@ multiple
 lines`);
 */
 
+/*
 const age = 15;
 
 if (age >= 18) {
@@ -181,3 +183,25 @@ if (birthYear <= 2000) {
 }
 
 console.log(century);
+*/
+
+// Coding Challenge #2
+
+
+const massMark = 78;
+const massJohn = 92;
+const heightMark = 1.69;
+const heightJohn = 1.95;
+
+
+const markBMI = massMark / heightMark ** 2;
+const johnBMI = massJohn / heightJohn ** 2;
+
+const markBMI2 = massMark / (heightMark * heightMark);
+const johnBMI2 = massJohn / (heightJohn * heightJohn);
+
+if (markBMI > johnBMI) {
+    console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI})`)
+} else {
+    console.log(`John's (${johnBMI}) BMI is higher than Mark's (${markBMI})`)
+}
