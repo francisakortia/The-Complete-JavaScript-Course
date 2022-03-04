@@ -185,8 +185,9 @@ if (birthYear <= 2000) {
 console.log(century);
 */
 
-// Coding Challenge #2
 
+/*
+// Coding Challenge #2
 
 const massMark = 78;
 const massJohn = 92;
@@ -205,3 +206,23 @@ if (markBMI > johnBMI) {
 } else {
     console.log(`John's (${johnBMI}) BMI is higher than Mark's (${markBMI})`)
 }
+
+*/
+//type conversion
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Francis'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+//type coercion
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' / '2');
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
