@@ -283,6 +283,7 @@ if (favourite !== 23) console.log('Wy not 23');
 
 */
 
+/*
 const hasDriversLicense = true; // A
 const hasGoodVision = true; // B
 
@@ -305,3 +306,26 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
     console.log('Someone else should drive...');
 }
+
+*/
+
+// CODING CHALLENGE #3"
+
+// 1
+scoreDolphins = (97 + 112 + 101) / 3;
+scoreKoalas = (109 + 95 + 106) / 3;
+
+console.log(`Dolphins score is ${scoreDolphins}`);
+console.log(`Koalas score is ${scoreKoalas}`);
+
+// 2
+if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
+    console.log('Dolphins are the winners 🏆');
+} else if (scoreKoalas > scoreDolphins && scoreKoalas >= 100) {
+    console.log('Koaloas are the winners 🏆');
+} else if (scoreDolphins === scoreKoalas && scoreDolphins >= 100 && scoreKoalas >= 100) {
+    console.log('It was a draw');
+} else if (scoreDolphins < 100 || scoreKoalas < 100) {
+    console.log('Teams scored below 100');
+}
+
