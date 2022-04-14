@@ -185,6 +185,8 @@ console.log(ages);
 
 */
 
+/*
+
 const friends = ['Michael', 'Steven', 'Peter'];
 
 // Add elements
@@ -215,3 +217,43 @@ console.log(friends.includes(23));
 if (friends.includes('Michael')) {
     console.log('You have a friend called Michael');
 }
+
+*/
+
+// Coding Challenge 2
+function calcTip(bill) {
+    if (bill>= 50 && bill <=300) {
+        let tip = .15 * bill
+        return tip;
+    } else {
+        let tip = .20 * bill
+        return tip;
+    }
+}
+
+const calcTip1 = function(bill) {
+    return bill >= 50 && bill <= 300 ? 0.15 * bill : bill * 0.2;
+}
+
+console.log(calcTip(100));
+console.log(calcTip1(100));
+
+let bills = [125, 555, 44];
+
+const tips = [];
+tips.push(calcTip(bills[0]));
+tips.push(calcTip(bills[1]));
+tips.push(calcTip(bills[bills.length-1]));
+console.log(tips);
+
+const tips1 = [calcTip(bills[0]), calcTip(bills[1]),calcTip(bills[2])];
+console.log(tips1);
+
+const total = [];
+total.push(bills[0] + tips[0]);
+total.push(bills[1] + tips[1]);
+total.push(bills[2] + tips[2]);
+console.log(total);
+
+const total1 = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(total1);
