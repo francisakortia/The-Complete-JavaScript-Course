@@ -220,6 +220,8 @@ if (friends.includes('Michael')) {
 
 */
 
+/*
+
 // Coding Challenge 2
 function calcTip(bill) {
     if (bill>= 50 && bill <=300) {
@@ -257,3 +259,13 @@ console.log(total);
 
 const total1 = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(total1);
+
+*/
+
+const francis = {
+    firstName: 'Francis',
+    lastName: 'Akortia',
+    age: 2037 - 1980,
+    job: 'developer',
+    friends: ['Michael', 'Peter', 'Steven']
+};
