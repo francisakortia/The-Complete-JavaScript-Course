@@ -262,6 +262,7 @@ console.log(total1);
 
 */
 
+/*
 const francis = {
     firstName: 'Francis',
     lastName: 'Akortia',
@@ -269,3 +270,41 @@ const francis = {
     job: 'developer',
     friends: ['Michael', 'Peter', 'Steven']
 };
+
+*/
+
+const francis = {
+    firstName: 'Francis',
+    lastName: 'Akortia',
+    age: 2037 - 1980,
+    job: 'developer',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+console.log(francis);
+
+console.log(francis.lastName);
+console.log(francis['lastName']);
+
+const nameKey = 'Name';
+console.log(francis['first' + nameKey]);
+console.log(francis['last' + nameKey]);
+
+// console.log(francis.'first' + nameKey);
+
+const interestedIn = prompt('What do you want to know about Francis? Choose between firstName, lastName, age, job and friends');
+
+
+if (francis[interestedIn]) {
+    console.log(francis[interestedIn]);
+} else {
+    console.log('Wrong request. Choose between firstName, lastName, age, job and friends');
+}
+
+francis.location = 'USA';
+francis['twitter'] = '@francis';
+console.log(francis);
+
+// Challenge
+// "Francis has 3 friends, and his best friend is called Michael"
+
+console.log(`${francis.firstName} has ${francis.friends.length} friends, and his best friend is called ${francis.friends[0]}`) 
