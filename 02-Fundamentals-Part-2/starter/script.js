@@ -393,6 +393,8 @@ if (mark.calcBMI() > john.calcBMI()) {
 
 */
 
+/*
+
 // console.log('Lifting weights repitition 1');
 // console.log('Lifting weights repitition 2');
 // console.log('Lifting weights repitition 3');
@@ -407,4 +409,46 @@ if (mark.calcBMI() > john.calcBMI()) {
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repitition ${rep}`);
     
+}
+
+*/
+
+const francisArray = [
+    'Francis',
+    'Akortia',
+    2037 - 1984,
+    'developer',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+const types = [];
+
+for (let i = 0; i < francisArray.length; i++) {
+    console.log(francisArray[i], typeof francisArray[i]);
+    
+   // types[i] = typeof francisArray[i];
+    types.push(typeof francisArray[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log('---- ONLY STRINGS ----')
+for (let i = 0; i < francisArray.length; i++) {
+    if (typeof francisArray[i] !== 'string') continue;
+    console.log(francisArray[i], typeof francisArray[i]); 
+}
+
+console.log('---- BREAK WIHT NUMBER ----')
+for (let i = 0; i < francisArray.length; i++) {
+    if (typeof francisArray[i] === 'number') break;
+    console.log(francisArray[i], typeof francisArray[i]); 
 }
