@@ -413,6 +413,8 @@ for (let rep = 1; rep <= 10; rep++) {
 
 */
 
+/*
+
 const francisArray = [
     'Francis',
     'Akortia',
@@ -447,8 +449,32 @@ for (let i = 0; i < francisArray.length; i++) {
     console.log(francisArray[i], typeof francisArray[i]); 
 }
 
-console.log('---- BREAK WIHT NUMBER ----')
+console.log('---- BREAK WITH NUMBER ----')
 for (let i = 0; i < francisArray.length; i++) {
     if (typeof francisArray[i] === 'number') break;
     console.log(francisArray[i], typeof francisArray[i]); 
 }
+
+*/
+
+const francis = [
+    'Francis',
+    'Akortia',
+    2037 - 1984,
+    'developer',
+    ['Michael', 'Peter', 'Steven'],
+    true
+];
+
+for (let i = francis.length - 1; i >= 0; i--) {
+    console.log(i, francis[i]);
+}
+
+
+    for (let exercise = 1; exercise < 4; exercise++){
+        console.log(`------------Starting Excercise ${exercise}`);
+
+        for (let rep = 1; rep < 6; rep++) {
+            console.log(`Lifting weigt repetition ${rep}`)
+        }
+    }
