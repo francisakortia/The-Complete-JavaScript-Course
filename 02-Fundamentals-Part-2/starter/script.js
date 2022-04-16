@@ -313,6 +313,8 @@ console.log(`${francis.firstName} has ${francis.friends.length} friends, and his
 
 */
 
+/*
+
 const francis = {
     firstName: 'Francis',
     lastName: 'Akortia',
@@ -352,3 +354,37 @@ console.log(francis.age);
 console.log(`${francis.firstName} is a ${francis.calcAge()}-year old ${francis.job}, and he has ${(francis.hasDriversLicense) ? "a" : "no"} driver's license`);
 
 console.log(francis.getSummary());
+
+*/
+
+// CODING CHALLENGE 3
+
+const mark = {
+    firstName: 'Mark',
+    lastName: 'Miller',
+    mass: 78,
+    height: 1.69,
+
+    calcBMI: function () {
+        this.BMI = this.mass / this.height ** 2;
+        return this.BMI;
+    }
+}
+
+const john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    mass: 92,
+    height: 1.95,
+
+    calcBMI: function () {
+        this.BMI = this.mass / this.height ** 2;
+        return this.BMI;
+    }
+}
+
+if (mark.calcBMI() > john.calcBMI()) {
+    console.log(`Mark's BMI (${mark.BMI}) is higher than John's (${john.BMI})`)
+} else if (john.BMI > mark.BMI) {
+    console.log(`John's BMI (${john.BMI}) is higher than Mark's (${mark.BMI})`)
+}
